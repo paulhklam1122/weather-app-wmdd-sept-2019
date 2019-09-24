@@ -17,8 +17,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%',
-    marginTop: 300
+    width: '100%'
   },
   textInput: {
     width: 300,

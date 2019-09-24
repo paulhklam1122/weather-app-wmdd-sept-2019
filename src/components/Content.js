@@ -1,16 +1,16 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Content = () => (
+const Content = (props) => (
   <View style={styles.content}>
     <View>
-      <Text style={styles.temp}>17 degrees</Text>
+      <Text style={styles.temp}>{props.temp}</Text>
     </View>
     <View>
-      <Text style={styles.cityName}>City</Text>
+      <Text style={styles.cityName}>{props.cityName}</Text>
     </View>
     <View>
-      <Text style={styles.countryName}>Country</Text>
+      <Text style={styles.countryName}>{props.country}</Text>
     </View>
   </View>
 )
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: 'transparent',
-    marginTop: 50
+    // marginTop: 50
   },
   temp: {
     fontSize: 50,
